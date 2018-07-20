@@ -1,0 +1,29 @@
+/* PHASE 5: Cats */
+
+.content-header {
+  position: relative;
+}
+
+.content-header {
+  height: 201px;
+  width: 100%;
+  background-size: cover;
+  /* overflow: hidden; */
+}
+
+.content-header button {
+  background-color: #fff;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  height: 31px;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.words {
+  
+}
