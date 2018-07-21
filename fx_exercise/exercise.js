@@ -68,7 +68,7 @@ const ccb = function (sum) {
 function absurdBubbleSort(arr, sortCompletionCallBack) {
   function outerBubblesSortLoop(madeAnySwaps) {
     if(madeAnySwaps === true){
-      innerBubbleSortLoop(arr, 0, madeAnySwaps, outerBubblesSortLoop);
+      innerBubbleSortLoop(arr, 0, false, outerBubblesSortLoop);
     } 
     else {
       console.log(arr);
@@ -91,7 +91,6 @@ function askIfGreaterThan(e1, e2, callback){
 
 function innerBubbleSortLoop(arr, i, madeAnySwaps, outerBubblesSortLoop) {
   if (i < arr.length - 1) {
-    // madeAnySwaps = false;
     askIfGreaterThan(arr[i], arr[i+1], (isGreaterThan) => {
       if (isGreaterThan) {
         madeAnySwaps = true;
